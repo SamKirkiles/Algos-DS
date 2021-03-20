@@ -24,19 +24,35 @@ class BSTNode {
 
 				if (right == NULL){
 					right = new BSTNode(item);
-				}else{
+				} else {
 					(*right).insert(item);
 				}
 
 			} else { 
-
 				if (left == NULL){
 					left = new BSTNode(item);
-				}else{
+				} else {
 					(*left).insert(item);
 				}
 
 			}
+		}
+		
+		// See if something is present in our binary tree	
+		vector<int> search(int query){
+
+			if (data == query){
+				return true;
+			}
+	
+			if (data < query){
+					
+			}else {
+				;
+			}
+		
+			
+				
 		}
 		
 		vector<int> walkInOrder(){
